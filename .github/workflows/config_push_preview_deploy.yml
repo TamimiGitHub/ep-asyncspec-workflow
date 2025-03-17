@@ -10,7 +10,7 @@ on:
     branches: [ main ]
 
 env:
-  EVENT_MESH_NAME: "F5 Solace Runtimes _MEM"
+  EVENT_MESH_NAME: F5DEV_MEM
   
 jobs:
   config-push:
