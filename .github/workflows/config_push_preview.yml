@@ -10,7 +10,7 @@ on:
     branches: [ main ]
 
 env: 
-  EVENT_MESH_NAME: us-central-solace-Prod
+  EVENT_MESH_NAME: "F5 Solace Runtimes _MEM"
   PREVIEW_ONLY: TRUE
 
 jobs:
@@ -25,7 +25,7 @@ jobs:
         uses: tj-actions/changed-files@v40
         with:
           files: | 
-            asyncapi*
+            deploy/**
       
       - name: Read asyncapi content
         id: asyncapi
