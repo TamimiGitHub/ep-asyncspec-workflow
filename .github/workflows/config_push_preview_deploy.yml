@@ -43,7 +43,7 @@ jobs:
         uses: tmelliottjr/extract-regex-action@v1.4.0
         id: epApplicationVersionId
         with:
-          regex: '(?<=x-ep-application-version-id\\": \\")(.*?)(?=\\")' 
+          regex: 'x-ep-application-version-id":\s*"([^"]+)' 
           flags: "gm"
           input: ${{steps.asyncapi.outputs.asyncFile}}
 
